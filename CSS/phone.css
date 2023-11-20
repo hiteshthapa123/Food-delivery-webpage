@@ -1,4 +1,4 @@
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     #navbar {
         flex-direction: column;
     }
@@ -11,22 +11,9 @@
         padding-bottom: 5px;
     }
 
-    #services {
-        flex-direction: column;
-    }
-
-    #services .box {
-        margin: 8px;
-        padding: 8px;
-    }
-
     #home {
         height: 333px;
         padding: 20px 31px;
-    }
-
-    #home::before {
-        height: 470px;
     }
 
     #home p {
@@ -46,6 +33,16 @@
         font-size: 0.8rem;
         padding: 3px 10px;
     }
+
+    #services {
+        flex-direction: column;
+    }
+
+    #services .box {
+        margin: 8px;
+        padding: 8px;
+    }
+    
     #clients{
         flex-wrap: wrap;
     }
