@@ -9,36 +9,25 @@ html {
     scroll-behavior: smooth;
 }
 
+.main {
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    
+}
+
 /* navigation bar  */
 #navbar {
     display: flex;
-    position: relative;
-    top: 0px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
 
 #navbar ul {
     display: flex;
 }
 
-#navbar::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.89;
-
-}
-
 #navbar ul li a {
     padding: 3px 22px;
-    display: block;
     text-decoration: none;
     color: white;
 }
@@ -72,18 +61,6 @@ html {
     align-items: center;
 }
 
-#home::before {
-    content: "";
-    background: url(../bg1.jpg) no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 615px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.89;
-}
-
 #home h1 {
     color: white;
     text-align: center;
@@ -95,6 +72,13 @@ html {
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
+}
+
+body hr {
+    height: 0.5rem;
+    background-color: #3c3b3b;
+    border: none;
+    outline: none;
 }
 
 /* service section  */
@@ -123,27 +107,15 @@ html {
 }
 
 /* clients section  */
-/* #client-section{
-    height: 344px;
-    
-} */
-#client-section::before {
-    content: "";
-    position: absolute;
-    background: url('../bg.jpg') no-repeat center center/cover;
-    width: 100%;
-    height: 325px;
-    z-index: -1;
-    opacity: 0.69;
 
+#client-section{
+    background: url('../bg.jpg') no-repeat center center/cover;
 }
 
 #clients {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 #clients img {
@@ -153,6 +125,7 @@ html {
 .client-item {
     padding: 34px;
 }
+
 
 /* contact section */
 #contact-box input,
@@ -175,17 +148,12 @@ html {
 }
 
 #contact-box label {
-    font-size: 1.3rem ;
+    font-size: 1.3rem;
     font-family: 'Bree Serif', serif;
 }
 
-#contact::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 520px;
-    z-index: -1;
-    opacity: 0.6;
+#contact{
+   
     background: url('../contact.jpg') no-repeat center center/cover;
 
 }
@@ -220,6 +188,7 @@ footer {
     border-radius: 10px;
     cursor: pointer;
 }
+
 .center {
     text-align: center;
 }
